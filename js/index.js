@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 users.push(user);
                 localStorage.setItem("users", JSON.stringify(users));
                 //console.log(users);
-               // window.location.href = "login.html";
+               // window.location.href = "index.html";
             }
 
 
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById("username").innerText = `Welcome ${userlogin.userName}`;
             } else {
                 
-                window.location.href = "login.html";
+                window.location.href = "index.html";
             }
 
             // logout function
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
                // e.preventDefault();
                 localStorage.removeItem("loginUsers");
                 console.log( JSON.parse(localStorage.removeItem("loginUsers")));
-                //window.location.href = "login.html";
+                //window.location.href = "index.html";
             });
    }
 
